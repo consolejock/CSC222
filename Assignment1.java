@@ -1,9 +1,5 @@
-import java.util.Scanner;
-
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
-
-import java.nio.file.FileSystemNotFoundException;
 import java.util.InputMismatchException;
+import java.util.Scanner;
 public class Assignment1 {
 
 	public static void main(String[] args) {
@@ -49,7 +45,7 @@ public class Assignment1 {
 			catch (InputMismatchException e){
 				System.out.print("Please enter an integer value: ");
 				scan.next(); 
-				continue;
+				
 			}
 		
 		
