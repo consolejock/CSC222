@@ -8,18 +8,27 @@ public class Problem2 {
         
         System.out.print("Please enter a line of text:");          
         
-        String userLoveInput;
+        String user;
 
       //  String userHateInput;
      
-        userLoveInput = input.nextLine();
+        user = input.nextLine();
         //userHateInput = input.nextLine();
 
+      if (user.contains("I love you")){
         System.out.print("I have repharsed that line:\n");
 
-        String userLoveOutput =userLoveInput.replace("love", "hate");
-        System.out.print(userLoveOutput);
+        String userOut =user.replace("love", "hate");
+        System.out.print(userOut);
+      }
+      if (user.contains("I hate you")) {
+         System.out.print("I have repharsed that line:\n");
 
+        String userOut =user.replace("hate", "love");
+        System.out.print(userOut);
+
+
+      }
 
 
 
