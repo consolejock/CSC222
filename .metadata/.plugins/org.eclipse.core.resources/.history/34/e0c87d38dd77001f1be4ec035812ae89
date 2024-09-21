@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+
+
+public class Problem11 {
+
+    public static void main (String[] args){
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("A number will be chosen for you! \n");
+        //int usernumber;
+        int number1 = (int) (Math.random() *10 ) +1;
+        int number2 = (int) (Math.random() *10 ) +1;
+        int number3 = (int) (Math.random() *10 ) +1;
+      //  usernumber = input.nextInt();
+        
+        System.out.print("\nThe number chosen for finalist 1 is: " + number1);
+        System.out.print("\nThe number chosen for finalist 2 is: " + number2);
+        System.out.print("\nThe number chosen for finalist 3 is: " + number3);
+
+      //if (number1 == number2) {
+    	  
+    	  
+      //}
+    }
+
+
+}

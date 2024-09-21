@@ -1,0 +1,67 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Problem8 {
+
+    public static void main (String[] args){
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a valid date in mm/dd/yyyy: ");
+        
+      //  String date = "mm/dd/yyyy";
+        
+       String date = input.nextLine();
+        
+        
+       
+       
+       SimpleDateFormat sdf =  new SimpleDateFormat("mm/dd/yyyy");
+       
+      //String format =  sdf.format(new Date());
+       sdf.setLenient(false);
+       
+       
+       try {
+    	   
+    	   Date parsedDate = sdf.parse(date);
+    	   System.out.print("\nThis date is valid " + sdf.format(parsedDate));
+       }
+       catch (ParseException e){
+    	   System.out.print("\nThis date is invalid");
+       }
+      // System.out.print(format);
+        
+      
+     /*   if (date == format) {
+        	System.out.print("\nThis date is valid");
+        	
+        }
+        
+        else {
+        	System.out.print("\nThis date is invalid");
+        }
+        
+ */       
+        //simpleDateFormat.setLenient(false);
+       
+      /* try {
+           Date parseDate = simpleDateFormat.parse(date);
+           System.out.print("Valid" + simpleDateFormat.format(parseDate));
+       } 
+       
+       catch (ParseException e) {
+        System.out.print("Invalid");
+       }
+
+        */
+        
+
+        
+     
+
+
+    }
+}

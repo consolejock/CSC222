@@ -26,13 +26,12 @@ public class Problem11 {
                 number3 = (int) (Math.random() * 10) + 1; // regenerate number3
             }
             
-  
-           System.out.print("\nThe number chosen for finalist 1 is: " + number1);
-           System.out.print("\nThe number chosen for finalist 2 is: " + number2);
-           System.out.print("\nThe number chosen for finalist 3 is: " + number3);
+            System.out.print("\nThe number chosen for finalist 1 is: " + number1);
+            System.out.print("\nThe number chosen for finalist 2 is: " + number2);
+            System.out.print("\nThe number chosen for finalist 3 is: " + number3);
         }
            
-      }
+        }
     
 
 
