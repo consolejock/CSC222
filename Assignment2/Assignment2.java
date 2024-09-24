@@ -9,14 +9,14 @@ public class Assignment2{
     private static Scanner input = new Scanner(System.in);
      public static void main (String[] args){
     
-    // Problem1();    
-     //Problem2();
-    // Problem3();
-   //  Problem4();
-    // Problem5();
- //    Problem6();
-    // Problem7();
-   //  Problem8();
+     Problem1();    
+     Problem2();
+     Problem3();
+     Problem4();
+     Problem5();
+     Problem6();
+     Problem7();
+     Problem8();
      Problem9();
      Problem10();
      Problem11();
@@ -54,7 +54,7 @@ public class Assignment2{
      }
 
     public static void Problem2(){
-        System.out.print("\nPlease enter a line of text:");          
+        System.out.print("\nPlease enter the following line of text (I love you or I hate you): ");          
        
         String user;
         user = input.nextLine();
@@ -223,11 +223,11 @@ public class Assignment2{
        
        try {
            Date parseDate = simpleDateFormat.parse(date);
-           System.out.print("Valid" + simpleDateFormat.format(parseDate));
+           System.out.print("\nValid" + simpleDateFormat.format(parseDate));
        } 
        
        catch (ParseException e) {
-        System.out.print("Invalid");
+        System.out.print("\nInvalid");
        }
 
     }
@@ -261,65 +261,70 @@ public class Assignment2{
          float caloriesMen = (float) (66 + (6.3 * weight) + (12.9 * height) - (6.8 * age));
          int mchoclatebars = (int) (caloriesMen/230);
          System.out.print("\nThe calories needed for a man to maintain his weight: " +caloriesMen+ "\n" + 
-        "That would be about " +mchoclatebars+ " chocolate bars");
+        "That would be about " +mchoclatebars+ " chocolate bars\n");
 
 }
 
     }
 
     public static void Problem10(){
+  
+    Scanner input = new Scanner(System.in);
+    System.out.print("\nEnter a word: ");
+
+    String word = input.nextLine();
+
+
+    while(!word.equals("quit")) { 
+     boolean hasProperty = true; 
+        for (int i = 1; i < word.length(); i++) { 
+            char frontCh = word.charAt(i); 
+            char backCh = word.charAt(word.length() - i);
+        if (frontCh != backCh)
+            hasProperty = false;
+    }
+    if(!hasProperty){
+        System.out.println(word + " does not have the property.");
+    }
+    else{
+        System.out.println(word + " has the property.");
+    }
+    word = input.nextLine();
+}
+    System.out.print("The program has quit!");
+
     
-        System.out.print("\nEnter a word: ");
-        String word = input.nextLine(); 
-
-
-         while(!word.equals("quit")) { 
-             boolean hasProperty = true; 
-             for (int i = 1; i < word.length(); i++) { 
-                char frontCh = word.charAt(i); 
-                char backCh = word.charAt(word.length() - i);
-             if (frontCh != backCh)
-                 hasProperty = false;
-         }
-             if (!hasProperty){
-               System.out.println("\n"+word + " does not have the quality");
     }
 
-             else {
-                System.out.println("\n"+word + " has the quality");
-             }
-            word = input.nextLine();
-   
-    }
-        System.out.print("\nThe program has quit!");
 
-        
-    }
 
     public static void Problem11(){
-        System.out.print("\nA number will be chosen for you! \n");
+        System.out.print("A number will be chosen for you! \n");
+        //int usernumber;
         int number1 = (int) (Math.random() *10 ) +1;
         int number2 = (int) (Math.random() *10 ) +1;
         int number3 = (int) (Math.random() *10 ) +1;
-  
+      //  usernumber = input.nextInt();
         
     
             if (number1 == number2) {
-                number2 = (int) (Math.random() * 10) + 1; 
+                number2 = (int) (Math.random() * 10) + 1; // regenerate number2
+            }
             if (number1 == number3) {
-                number3 = (int) (Math.random() * 10) + 1; 
+                number3 = (int) (Math.random() * 10) + 1; // regenerate number3
             }
             if (number2 == number3) {
-                number3 = (int) (Math.random() * 10) + 1; 
+                number3 = (int) (Math.random() * 10) + 1; // regenerate number3
             }
             
   
            System.out.print("\nThe number chosen for finalist 1 is: " + number1);
            System.out.print("\nThe number chosen for finalist 2 is: " + number2);
-           System.out.print("\nThe number chosen for finalist 3 is: " + number3);
+           System.out.print("\nThe number chosen for finalist 3 is: " + number3+"\n");
         }
-
-    }
+           
+      
+    
 
     public static void Problem12(){
         System.out.print("\nEnter the dollar amount: ");

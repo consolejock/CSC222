@@ -1,0 +1,42 @@
+2024-09-20 23:08:58,221 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-09-20 23:14:03,795 [Worker-11: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-21 00:22:06,883 [ModalContext] INFO  o.e.jgit.transport.TransportHttp - URI 'http://github.com/consolejock/CSC222.git': following HTTP redirect #0  http://github.com/consolejock/CSC222.git/ -> https://github.com/consolejock/CSC222.git/
+2024-09-21 00:22:13,801 [ModalContext] INFO  o.e.jgit.transport.TransportHttp - URI 'http://github.com/consolejock/CSC222.git': following HTTP redirect #0  http://github.com/consolejock/CSC222.git/ -> https://github.com/consolejock/CSC222.git/
+2024-09-21 00:27:53,224 [ModalContext] INFO  o.e.jgit.transport.TransportHttp - URI 'http://github.com/consolejock/CSC222.git': following HTTP redirect #0  http://github.com/consolejock/CSC222.git/ -> https://github.com/consolejock/CSC222.git/
+2024-09-21 00:29:35,720 [Worker-15: Cloning from http://github.com/consolejock/CSC222.git] INFO  o.e.jgit.transport.TransportHttp - URI 'http://github.com/consolejock/CSC222.git': following HTTP redirect #0  http://github.com/consolejock/CSC222.git/ -> https://github.com/consolejock/CSC222.git/
+2024-09-21 00:34:28,110 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.9; built: 2024-05-03T13:03:17.262Z; git: efe8023327e67287f9bfd006700e6a71d45b5dd6; jvm 22.0.2+9
+2024-09-21 00:34:28,178 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@8614717{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@32bdfbcb{STARTED}}
+2024-09-21 00:34:28,178 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2024-09-21 00:34:28,208 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@29874b53{HTTP/1.1, (http/1.1)}{127.0.0.1:52757}
+2024-09-21 00:34:28,216 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@6bcfa534{STARTING}[12.0.9,sto=0] @4877873ms
+2024-09-21 00:48:07,846 [Worker-15: Pulling origin from http://github.com/consolejock/CSC222.git] INFO  o.e.jgit.transport.TransportHttp - URI 'http://github.com/consolejock/CSC222.git': following HTTP redirect #0  http://github.com/consolejock/CSC222.git/ -> https://github.com/consolejock/CSC222.git/
+2024-09-21 02:11:02,668 [Worker-55: C:\Users\consolejockey\Documents\CSC222_github] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Problem5 references non-existing project CSC222.
+org.eclipse.core.runtime.CoreException: Launch configuration Problem5 references non-existing project CSC222.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1867)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1744)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationAdded(MavenLaunchConfigurationListener.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationAdded(LaunchManager.java:1983)
+	at org.eclipse.debug.internal.core.LaunchManager.projectOpened(LaunchManager.java:2075)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchManagerVisitor.visit(LaunchManager.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:87)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:61)
+	at org.eclipse.debug.internal.core.LaunchManager.resourceChanged(LaunchManager.java:2135)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1158)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:546)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:246)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-09-21 02:12:51,405 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@6bcfa534{STOPPING}[12.0.9,sto=0]
+2024-09-21 02:12:51,409 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@29874b53{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2024-09-21 02:13:10,185 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-22 19:22:37,902 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

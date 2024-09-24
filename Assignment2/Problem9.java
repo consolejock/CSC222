@@ -21,17 +21,6 @@ public class Problem9 {
         int age;
         age = input.nextInt();
 
-       // System.out.print("Please enter M(Man) or W(Woman) for gender: ");
-        //String gender;
-        //gender = input.nextLine();
-
-      // float caloriesWomen =(float) (655 + (4.3 * weight) + (4.7 * height) - (4.7 * age));
-
-       //float caloriesMen = (float) (66 + (6.3 * weight) + (12.9 * height) - (6.8 * age));
-
-       //int wchocalateBars = (int) (caloriesWomen/230);
-      // int mchoclatebars = (int) (caloriesMen/230);
-
         if ("W".equals(gender)){
          float caloriesWomen =(float) (655 + (4.3 * weight) + (4.7 * height) - (4.7 * age));  
          int wchocalateBars = (int) (caloriesWomen/230);

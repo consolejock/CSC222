@@ -10,7 +10,7 @@ public class Problem6 {
     String [] words = new String[3]; 
 
     for (int i = 0; i < words.length; i++){
-        System.out.print("Please enter a string: ");
+        System.out.print("\nPlease enter a string: ");
         words[i] = input.nextLine();
     }
 

@@ -3,13 +3,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
+
 public class Problem8 {
 
     public static void main (String[] args){
-
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Enter a valid date in mm/dd/yyyy: ");
+  
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter a valid date in mm/dd/yyyy: ");
         
         String date = "mm/dd/yyyy";
         date = input.nextLine();
@@ -22,11 +22,11 @@ public class Problem8 {
        
        try {
            Date parseDate = simpleDateFormat.parse(date);
-           System.out.print("Valid" + simpleDateFormat.format(parseDate));
+           System.out.print("\nValid: " + simpleDateFormat.format(parseDate));
        } 
        
        catch (ParseException e) {
-        System.out.print("Invalid");
+        System.out.print("\nInvalid");
        }
 
         
@@ -34,7 +34,6 @@ public class Problem8 {
 
         
      
-
 
     }
 }

@@ -56,7 +56,8 @@ Notes: This project provides an opportunity to introduce format checking.  The s
 
 10. For all of the following words, if you move the first letter to the end of the word, and then spell the result backwards you will get the original word:
 
-banana dresser grammar potato revive uneven assess
+banana dresser gramma
+r potato revive uneven assess
 
 Write a method that reads a word and determines whether it has this property. Continue reading and testing words until you encounter the word quit. Treat uppercase letters the same as lowercase letters. Display how many words you found when you finish.
  
